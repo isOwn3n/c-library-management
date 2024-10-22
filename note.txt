@@ -1,0 +1,40 @@
+To Get Window Size Use get_terminal_stuff Function.
+    # Define TerminalStuff Struct
+    struct TerminalStuff term_stuff;
+    # Call get_terminal_stuff Function
+    get_terminal_stuff(&term_stuff);
+
+
+Clear the screen
+    \033[2J
+Also You Can Clear Whole Console
+    \033[H\033[J
+
+
+Move in terminal
+    \033[<Row>;<Col>H
+    Example:
+        # Cursor go to row 5, col 10
+        \033[5;10H
+
+
+Move the cursor down
+    \033[<Row>B
+    Example:
+        # Move the cursor down by 3 rows
+        \033[3B
+
+
+Move the cursor on the same line
+    \033[<Col>C
+    Example:
+        # Move the cursor to column 20 on the same line
+        \033[20C
+
+
+Hide cursor
+    \033[?25l
+
+Show the cursor
+    \033[?25h
+

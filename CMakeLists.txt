@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.29)
-project(first_tui C)
+project(tui-library C)
 
 set(CMAKE_C_STANDARD 11)
 find_package(SQLite3 REQUIRED)
@@ -14,6 +14,6 @@ set(SOURCES
         src/database.c
 )
 
-add_executable(first_tui ${SOURCES})
+add_executable(tui-library ${SOURCES})
 
-target_link_libraries(first_tui SQLite::SQLite3)
+target_link_libraries(tui-library SQLite::SQLite3)

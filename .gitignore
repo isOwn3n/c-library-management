@@ -1,0 +1,6 @@
+cmake-build-debug
+build
+*.db
+*.sqlite3
+.env
+.idea/
